@@ -58,11 +58,30 @@
 #include "Thirdparty/DBoW2/DUtils/Random.h"
 #include <algorithm>
 
+#include "opencv_legacy_compat.h"
+using cv_legacy::CvMat;
+using cv_legacy::cvSolve;
+using cv_legacy::cvInvert;
+using cv_legacy::cvSVD;
+using cv_legacy::cvmGet;
+using cv_legacy::cvmSet;
+using cv_legacy::cvMulTransposed;
+using cv_legacy::cvSetZero;
+// using cv_legacy::cvMat;
+using cv_legacy::cvCreateMat;
+using cv_legacy::cvReleaseMat;
+using cv_legacy::dbptr;
+using cv_legacy::CV_SVD;
+using cv_legacy::CV_SVD_MODIFY_A;
+using cv_legacy::CV_SVD_U_T;
+using cv_legacy::CV_SVD_V_T;
+
+using namespace cv_legacy;
+
 using namespace std;
 
 namespace ORB_SLAM2
 {
-
 
 PnPsolver::PnPsolver(const Frame &F, const vector<MapPoint*> &vpMapPointMatches):
     pws(0), us(0), alphas(0), pcs(0), maximum_number_of_correspondences(0), number_of_correspondences(0), mnInliersi(0),
@@ -394,7 +413,8 @@ void PnPsolver::choose_control_points(void)
 
   for(int i = 0; i < number_of_correspondences; i++)
     for(int j = 0; j < 3; j++)
-      PW0->data.db[3 * i + j] = pws[3 * i + j] - cws[0][j];
+      // PW0->data.db[3 * i + j] = pws[3 * i + j] - cws[0][j];
+      cv_legacy::dbptr(PW0)[3 * i + j] = pws[3 * i + j] - cws[0][j];
 
   cvMulTransposed(PW0, &PW0tPW0, 1);
   cvSVD(&PW0tPW0, &DC, &UCt, 0, CV_SVD_MODIFY_A | CV_SVD_U_T);
@@ -436,7 +456,8 @@ void PnPsolver::compute_barycentric_coordinates(void)
 void PnPsolver::fill_M(CvMat * M,
 		  const int row, const double * as, const double u, const double v)
 {
-  double * M1 = M->data.db + row * 12;
+  // double * M1 = M->data.db + row * 12;
+  double * M1 = cv_legacy::dbptr(M) + row * 12;
   double * M2 = M1 + 12;
 
   for(int i = 0; i < 4; i++) {
@@ -814,7 +835,8 @@ void PnPsolver::compute_A_and_b_gauss_newton(const double * l_6x10, const double
 {
   for(int i = 0; i < 6; i++) {
     const double * rowL = l_6x10 + i * 10;
-    double * rowA = A->data.db + i * 4;
+    // double * rowA = A->data.db + i * 4;
+    double * rowA = cv_legacy::dbptr(A) + i * 4;
 
     rowA[0] = 2 * rowL[0] * betas[0] +     rowL[1] * betas[1] +     rowL[3] * betas[2] +     rowL[6] * betas[3];
     rowA[1] =     rowL[1] * betas[0] + 2 * rowL[2] * betas[1] +     rowL[4] * betas[2] +     rowL[7] * betas[3];
@@ -843,13 +865,21 @@ void PnPsolver::gauss_newton(const CvMat * L_6x10, const CvMat * Rho,
   const int iterations_number = 5;
 
   double a[6*4], b[6], x[4];
-  CvMat A = cvMat(6, 4, CV_64F, a);
-  CvMat B = cvMat(6, 1, CV_64F, b);
-  CvMat X = cvMat(4, 1, CV_64F, x);
+  // CvMat A = cvMat(6, 4, CV_64F, a);
+  // CvMat B = cvMat(6, 1, CV_64F, b);
+  // CvMat X = cvMat(4, 1, CV_64F, x);
+  CvMat A = cv_legacy::CvMat(6, 4, CV_64F, a);
+  CvMat B = cv_legacy::CvMat(6, 1, CV_64F, b);
+  CvMat X = cv_legacy::CvMat(4, 1, CV_64F, x);
 
   for(int k = 0; k < iterations_number; k++) {
-    compute_A_and_b_gauss_newton(L_6x10->data.db, Rho->data.db,
-				 betas, &A, &B);
+    // compute_A_and_b_gauss_newton(L_6x10->data.db, Rho->data.db,
+		// 		 betas, &A, &B);
+    compute_A_and_b_gauss_newton(cv_legacy::dbptr(L_6x10), 
+                                cv_legacy::dbptr(Rho),
+				                        betas, 
+                                &A, 
+                                &B);
     qr_solve(&A, &B, &X);
 
     for(int i = 0; i < 4; i++)
@@ -875,7 +905,9 @@ void PnPsolver::qr_solve(CvMat * A, CvMat * b, CvMat * X)
     A2 = new double[nr];
   }
 
-  double * pA = A->data.db, * ppAkk = pA;
+  // double * pA = A->data.db, * ppAkk = pA;
+  double * pA = cv_legacy::dbptr(A), * ppAkk = pA;
+
   for(int k = 0; k < nc; k++) {
     double * ppAik = ppAkk, eta = fabs(*ppAik);
     for(int i = k + 1; i < nr; i++) {
@@ -919,7 +951,8 @@ void PnPsolver::qr_solve(CvMat * A, CvMat * b, CvMat * X)
   }
 
   // b <- Qt b
-  double * ppAjj = pA, * pb = b->data.db;
+  // double * ppAjj = pA, * pb = b->data.db;
+  double * ppAjj = pA, * pb = cv_legacy::dbptr(b);
   for(int j = 0; j < nc; j++) {
     double * ppAij = ppAjj, tau = 0;
     for(int i = j; i < nr; i++)	{
@@ -936,7 +969,8 @@ void PnPsolver::qr_solve(CvMat * A, CvMat * b, CvMat * X)
   }
 
   // X = R-1 b
-  double * pX = X->data.db;
+  // double * pX = X->data.db;
+  double * pX = cv_legacy::dbptr(X);
   pX[nc - 1] = pb[nc - 1] / A2[nc - 1];
   for(int i = nc - 2; i >= 0; i--) {
     double * ppAij = pA + i * nc + (i + 1), sum = 0;

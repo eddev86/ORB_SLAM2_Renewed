@@ -55,6 +55,12 @@
 #include "MapPoint.h"
 #include "Frame.h"
 
+#include <opencv2/core.hpp> 
+
+#include "opencv_legacy_compat.h"
+using CvMat = cv_legacy::CvMat;
+using namespace cv_legacy;
+
 namespace ORB_SLAM2
 {
 
@@ -93,16 +99,32 @@ class PnPsolver {
 
   void choose_control_points(void);
   void compute_barycentric_coordinates(void);
-  void fill_M(CvMat * M, const int row, const double * alphas, const double u, const double v);
+  void fill_M(cv_legacy::CvMat * M, 
+              const int row, 
+              const double * alphas, 
+              const double u, 
+              const double v);
   void compute_ccs(const double * betas, const double * ut);
   void compute_pcs(void);
 
   void solve_for_sign(void);
 
-  void find_betas_approx_1(const CvMat * L_6x10, const CvMat * Rho, double * betas);
-  void find_betas_approx_2(const CvMat * L_6x10, const CvMat * Rho, double * betas);
-  void find_betas_approx_3(const CvMat * L_6x10, const CvMat * Rho, double * betas);
-  void qr_solve(CvMat * A, CvMat * b, CvMat * X);
+  // void find_betas_approx_1(const CvMat * L_6x10, const CvMat * Rho, double * betas);
+  // void find_betas_approx_2(const CvMat * L_6x10, const CvMat * Rho, double * betas);
+  // void find_betas_approx_3(const CvMat * L_6x10, const CvMat * Rho, double * betas);
+  // void qr_solve(CvMat * A, CvMat * b, CvMat * X);
+  void find_betas_approx_1(const cv_legacy::CvMat* L_6x10,
+                          const cv_legacy::CvMat* Rho,
+                          double* betas);
+  void find_betas_approx_2(const cv_legacy::CvMat* L_6x10,
+                         const cv_legacy::CvMat* Rho,
+                         double* betas);
+  void find_betas_approx_3(const cv_legacy::CvMat* L_6x10,
+                         const cv_legacy::CvMat* Rho,
+                         double* betas);
+  void qr_solve(cv_legacy::CvMat* A,
+                cv_legacy::CvMat* b,
+                cv_legacy::CvMat* X);
 
   double dot(const double * v1, const double * v2);
   double dist2(const double * p1, const double * p2);
@@ -110,9 +132,17 @@ class PnPsolver {
   void compute_rho(double * rho);
   void compute_L_6x10(const double * ut, double * l_6x10);
 
-  void gauss_newton(const CvMat * L_6x10, const CvMat * Rho, double current_betas[4]);
-  void compute_A_and_b_gauss_newton(const double * l_6x10, const double * rho,
-				    double cb[4], CvMat * A, CvMat * b);
+  // void gauss_newton(const CvMat * L_6x10, const CvMat * Rho, double current_betas[4]);
+  // void compute_A_and_b_gauss_newton(const double * l_6x10, const double * rho,
+	// 			    double cb[4], CvMat * A, CvMat * b);
+  void gauss_newton(const cv_legacy::CvMat* L_6x10,
+                    const cv_legacy::CvMat* Rho,
+                    double current_betas[4]);
+  void compute_A_and_b_gauss_newton(const double* l_6x10, 
+                                    const double* rho, 
+                                    double cb[4],
+                                    cv_legacy::CvMat* A,
+                                    cv_legacy::CvMat* b);
 
   double compute_R_and_t(const double * ut, const double * betas,
 			 double R[3][3], double t[3]);

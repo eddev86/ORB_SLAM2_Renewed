@@ -1,0 +1,799 @@
+make: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[1]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+[ 62%] Built target ORB_SLAM2
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+[ 65%] Building CXX object CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.o
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/edaraya/ORB_SLAM2/include/ORBVocabulary.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/KeyFrame.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/MapPoint.h:24,
+                 from /home/edaraya/ORB_SLAM2/include/FrameDrawer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:28,
+                 from /home/edaraya/ORB_SLAM2/include/System.h:31,
+                 from /home/edaraya/ORB_SLAM2/Examples/RGB-D/rgbd_tum.cc:29:
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LoopClosing.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LocalMapping.h:26,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:31:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/local/include/pangolin/gl/opengl_render_state.h:40,
+                 from /usr/local/include/pangolin/handler/handler.h:30,
+                 from /usr/local/include/pangolin/display/widgets.h:32,
+                 from /usr/local/include/pangolin/pangolin.h:40,
+                 from /home/edaraya/ORB_SLAM2/include/MapDrawer.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:26:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+[ 68%] Linking CXX executable /home/edaraya/ORB_SLAM2/Examples/RGB-D/rgbd_tum
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+[ 68%] Built target rgbd_tum
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+[ 71%] Building CXX object CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.o
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/edaraya/ORB_SLAM2/include/ORBVocabulary.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/KeyFrame.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/MapPoint.h:24,
+                 from /home/edaraya/ORB_SLAM2/include/FrameDrawer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:28,
+                 from /home/edaraya/ORB_SLAM2/include/System.h:31,
+                 from /home/edaraya/ORB_SLAM2/Examples/Stereo/stereo_kitti.cc:30:
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LoopClosing.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LocalMapping.h:26,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:31:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/local/include/pangolin/gl/opengl_render_state.h:40,
+                 from /usr/local/include/pangolin/handler/handler.h:30,
+                 from /usr/local/include/pangolin/display/widgets.h:32,
+                 from /usr/local/include/pangolin/pangolin.h:40,
+                 from /home/edaraya/ORB_SLAM2/include/MapDrawer.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:26:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+[ 75%] Linking CXX executable /home/edaraya/ORB_SLAM2/Examples/Stereo/stereo_kitti
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+[ 75%] Built target stereo_kitti
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+[ 78%] Building CXX object CMakeFiles/stereo_euroc.dir/Examples/Stereo/stereo_euroc.cc.o
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/edaraya/ORB_SLAM2/include/ORBVocabulary.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/KeyFrame.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/MapPoint.h:24,
+                 from /home/edaraya/ORB_SLAM2/include/FrameDrawer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:28,
+                 from /home/edaraya/ORB_SLAM2/include/System.h:31,
+                 from /home/edaraya/ORB_SLAM2/Examples/Stereo/stereo_euroc.cc:30:
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LoopClosing.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LocalMapping.h:26,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:31:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/local/include/pangolin/gl/opengl_render_state.h:40,
+                 from /usr/local/include/pangolin/handler/handler.h:30,
+                 from /usr/local/include/pangolin/display/widgets.h:32,
+                 from /usr/local/include/pangolin/pangolin.h:40,
+                 from /home/edaraya/ORB_SLAM2/include/MapDrawer.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:26:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+[ 81%] Linking CXX executable /home/edaraya/ORB_SLAM2/Examples/Stereo/stereo_euroc
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+[ 81%] Built target stereo_euroc
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+[ 84%] Building CXX object CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.o
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/edaraya/ORB_SLAM2/include/ORBVocabulary.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/KeyFrame.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/MapPoint.h:24,
+                 from /home/edaraya/ORB_SLAM2/include/FrameDrawer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:28,
+                 from /home/edaraya/ORB_SLAM2/include/System.h:31,
+                 from /home/edaraya/ORB_SLAM2/Examples/Monocular/mono_tum.cc:29:
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LoopClosing.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LocalMapping.h:26,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:31:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/local/include/pangolin/gl/opengl_render_state.h:40,
+                 from /usr/local/include/pangolin/handler/handler.h:30,
+                 from /usr/local/include/pangolin/display/widgets.h:32,
+                 from /usr/local/include/pangolin/pangolin.h:40,
+                 from /home/edaraya/ORB_SLAM2/include/MapDrawer.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:26:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+[ 87%] Linking CXX executable /home/edaraya/ORB_SLAM2/Examples/Monocular/mono_tum
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+[ 87%] Built target mono_tum
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+[ 90%] Building CXX object CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.o
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/edaraya/ORB_SLAM2/include/ORBVocabulary.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/KeyFrame.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/MapPoint.h:24,
+                 from /home/edaraya/ORB_SLAM2/include/FrameDrawer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:28,
+                 from /home/edaraya/ORB_SLAM2/include/System.h:31,
+                 from /home/edaraya/ORB_SLAM2/Examples/Monocular/mono_kitti.cc:30:
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LoopClosing.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LocalMapping.h:26,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:31:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/local/include/pangolin/gl/opengl_render_state.h:40,
+                 from /usr/local/include/pangolin/handler/handler.h:30,
+                 from /usr/local/include/pangolin/display/widgets.h:32,
+                 from /usr/local/include/pangolin/pangolin.h:40,
+                 from /home/edaraya/ORB_SLAM2/include/MapDrawer.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:26:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+[ 93%] Linking CXX executable /home/edaraya/ORB_SLAM2/Examples/Monocular/mono_kitti
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+[ 93%] Built target mono_kitti
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+make[2]: Entering directory '/home/edaraya/ORB_SLAM2/build'
+[ 96%] Building CXX object CMakeFiles/mono_euroc.dir/Examples/Monocular/mono_euroc.cc.o
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/edaraya/ORB_SLAM2/include/ORBVocabulary.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/KeyFrame.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/MapPoint.h:24,
+                 from /home/edaraya/ORB_SLAM2/include/FrameDrawer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:25,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:28,
+                 from /home/edaraya/ORB_SLAM2/include/System.h:31,
+                 from /home/edaraya/ORB_SLAM2/Examples/Monocular/mono_euroc.cc:29:
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LoopClosing.h:34,
+                 from /home/edaraya/ORB_SLAM2/include/LocalMapping.h:26,
+                 from /home/edaraya/ORB_SLAM2/include/Tracking.h:31:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/local/include/pangolin/gl/opengl_render_state.h:40,
+                 from /usr/local/include/pangolin/handler/handler.h:30,
+                 from /usr/local/include/pangolin/display/widgets.h:32,
+                 from /usr/local/include/pangolin/pangolin.h:40,
+                 from /home/edaraya/ORB_SLAM2/include/MapDrawer.h:27,
+                 from /home/edaraya/ORB_SLAM2/include/Viewer.h:26:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/edaraya/ORB_SLAM2/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+[100%] Linking CXX executable /home/edaraya/ORB_SLAM2/Examples/Monocular/mono_euroc
+make[2]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+[100%] Built target mono_euroc
+make[1]: Leaving directory '/home/edaraya/ORB_SLAM2/build'
+make: Leaving directory '/home/edaraya/ORB_SLAM2/build'

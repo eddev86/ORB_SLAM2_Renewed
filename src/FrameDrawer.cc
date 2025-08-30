@@ -26,6 +26,9 @@
 
 #include<mutex>
 
+#include "opencv_legacy_compat.h"
+using namespace cv_legacy;
+
 namespace ORB_SLAM2
 {
 
@@ -72,7 +75,7 @@ cv::Mat FrameDrawer::DrawFrame()
     } // destroy scoped mutex -> release mutex
 
     if(im.channels()<3) //this should be always true
-        cvtColor(im,im,CV_GRAY2BGR);
+        cvtColor(im, im, cv_legacy::CV_GRAY2BGR);
 
     //Draw
     if(state==Tracking::NOT_INITIALIZED) //INITIALIZING
